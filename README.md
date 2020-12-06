@@ -1,4 +1,4 @@
-## dland
+## dland - digital land
 book deal with urbanomic and a cult twitter following in 10 seconds
 
 #### instructions
