@@ -7,6 +7,8 @@ compiled with:
     gcc -std=gnu99 -O2 -Os -Wall -Wextra -Werror -pedantic
 ```
 
+clone it, run it with ./dland and regret it immediately.
+
 #### future updates?
 * make it mimick a real philosopher
 * arguments to take input from any file, output to a named file
