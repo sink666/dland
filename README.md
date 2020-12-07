@@ -19,3 +19,4 @@ you can get a prettier output using ``fold``:
 #### future updates?
 * make it mimick a real philosopher
 * arguments to take input from any file, output to a named file
+* make up new words; staple words together with dashes and add K- to things.
