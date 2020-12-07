@@ -40,7 +40,6 @@ void writesentence(FILE* ifp, FILE* ofp)
 {
     char punctuation[] = ".,?;.";
     char word[30]; /* boy makes up some long ass words */
-    unsigned int fill = ftell(ofp);
 
     for(int j = r_slen(); j != 0; j--) {
 	getnewword(ifp, word, drand(MAXWORDS));
@@ -55,7 +54,6 @@ void writesentence(FILE* ifp, FILE* ofp)
 	    fputc(' ', ofp);
 
 	memset(word, 0, strlen(word));
-	fill++;
     }
 }
 
@@ -78,7 +76,6 @@ int main(void)
 	fputc('.', outp_fp);
 	fputs(spread, outp_fp);
     }
-
     fputs(closer, outp_fp);
 
     fclose(outp_fp);
