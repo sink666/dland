@@ -1,9 +1,9 @@
 ## dland - digital land
 book deal with urbanomic and a cult twitter following in 10 seconds
 
-this writes new sections of Meltdown using a dictionary of all the made up words
-in Meltdown. It's pretty accurate to the writing style in terms of general shape
-about 80% of the time.
+This writes new sections of Meltdown using a dictionary of all the made up words
+in Meltdown. Strings words together in similar shape and form to the real one.
+Randomly, but with disturbing accuracy.
 
 #### instructions
 compiled with:
@@ -20,3 +20,4 @@ you can get a prettier output using ``fold``:
 * make it mimick a real philosopher
 * arguments to take input from any file, output to a named file
 * make up new words; staple words together with dashes and add K- to things.
+* spend less time writing a sassy readme
