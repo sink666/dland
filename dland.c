@@ -51,6 +51,8 @@ void writesentence(FILE* ifp, FILE* ofp)
 
 	memset(word, 0, strlen(word));
     }
+
+    fputc('.', ofp);
 }
 
 int main(void)
@@ -67,9 +69,8 @@ int main(void)
 
     fputs(p_head, outp_fp);
     fputs(opener, outp_fp);
-    for(int i = n_pgraphs(7, 1); i != 0; i--) {
+    for(int i = drand(7, 1); i != 0; i--) {
 	writesentence(dict_fp, outp_fp);
-	fputc('.', outp_fp);
 	fputs(spread, outp_fp);
     }
     fputs(closer, outp_fp);
