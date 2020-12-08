@@ -22,9 +22,18 @@ void getnewword(FILE *fp, char* word, int line)
 	}
     }
 
-    for(i = 0; (c = fgetc(fp)) != '\n' && c != EOF; i++)
-	word[i] = c;
-
+    i = 0;
+    if(eva(64, 0, 0)) { /* make a k-word */
+	for(; (c = fgetc(fp)) != '\n' && c != EOF; i++) {
+	    word[i] = c;
+	}
+    } else {
+	word[i++] = 'K';
+	word[i++] = '-';
+	for(; (c = fgetc(fp)) != '\n' && c != EOF; i++) {
+	    word[i] = c;
+	}
+    }
     word[++i] = '\0';
 }
 
@@ -43,7 +52,7 @@ void writesentence(FILE* ifp, FILE* ofp)
 	}
 
 	if(j > 1) { /* invent a whole new word lmao */
-	    if(eva(16, 0, 0))
+	    if(eva(32, 0, 0))
 		fputc(' ', ofp);
 	    else
 		fputc('-', ofp);
