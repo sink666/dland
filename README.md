@@ -6,8 +6,7 @@ in Meltdown. Strings words together in similar shape and form to the real one.
 Randomly, but with disturbing accuracy.
 
 #### instructions
-requires libbsd
-compiled with:
+requires libbsd, k-compiled with:
 ```
     gcc -std=gnu99 -O2 -Os -Wall -Wextra -Werror -pedantic -lbsd
 ```
